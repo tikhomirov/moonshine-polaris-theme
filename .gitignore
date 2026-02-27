@@ -1,0 +1,17 @@
+/vendor/
+/.phpunit.cache/
+.phpunit.result.cache
+/.php_cs.cache
+/.php-cs-fixer.cache
+/.pint.cache
+/coverage/
+/.idea/
+/.vscode/
+*.log
+.DS_Store
+Thumbs.db
+/node_modules/
+/npm-debug.log*
+/yarn-debug.log*
+/yarn-error.log*
+/pnpm-debug.log*

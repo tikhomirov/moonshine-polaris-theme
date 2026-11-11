@@ -168,21 +168,30 @@ h6,
     background-color: rgb(99 102 241 / 8%) !important;
 }
 
+/* MS4 had a thin active tick, not the wide MS5 glow bar. */
+.menu-item._is-active > .menu-link::after,
 .menu-item._is-active .menu-link::after {
     width: 3px !important;
+    height: 50% !important;
     border-radius: 3px 0 0 3px !important;
     box-shadow: none !important;
     opacity: 0.8;
 }
 
+/*
+ * MS5 paints .menu-submenu as a card (border + background).
+ * On MS4 the group was just indented items, so remove the box.
+ */
 .menu-submenu {
-    border-color: rgb(255 255 255 / 6%) !important;
-    background-color: rgb(0 0 0 / 15%) !important;
+    border: 0 !important;
+    background: transparent !important;
 }
 
-:root:not(.dark) .menu-submenu {
-    border-color: rgb(0 0 0 / 6%) !important;
-    background-color: rgb(0 0 0 / 2%) !important;
+.layout-menu .menu-link .menu-badge,
+.layout-menu .menu-button .menu-badge {
+    border: 0 !important;
+    background-color: color-mix(in oklab, var(--color-primary) 22%, transparent) !important;
+    color: var(--color-base-text) !important;
 }
 
 .menu-submenu .menu-link,

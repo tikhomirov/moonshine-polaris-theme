@@ -12,7 +12,7 @@
     ],
     "require": {
         "php": "^8.2",
-        "moonshine/moonshine": "^4.4"
+        "moonshine/moonshine": "^4.4 || ^5.0"
     },
     "autoload": {
         "psr-4": {
